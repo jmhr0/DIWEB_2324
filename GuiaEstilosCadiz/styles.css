@@ -1,0 +1,61 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    height: 100vh;
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+    background-color: #ffdb58; /* Amarillo vibrante para el fondo del contenedor */
+}
+
+.divCabecera {
+    height: 100px;
+    margin: 10px;
+    background-color: #007acc;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.divPrincipal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    margin: 10px;
+    background-color: #ff6f61; /* Naranja vibrante para la sección principal */
+}
+
+.zonaNavegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #01a9db; /* Azul vibrante para la zona de navegación */
+}
+
+.zonaNavegacion div {
+    width: 1fr;
+    min-height: 50px;
+    height: auto;
+    margin: 5px;
+    background-color: #ffbc42; /* Amarillo brillante para los elementos de navegación */
+    padding-left: 5px;
+    border-radius: 6px;
+}
+
+.zonaNavegacion div:hover {
+    background-color: #fd7400; /* Naranja más oscuro al pasar el cursor */
+}
+
+.zonaContenido {
+    grid-column: 2 / 5;
+    margin: 10px;
+    padding-left: 5px;
+    border-radius: 6px;
+    border-left: 2px;
+    border-top: 2px;
+    background-color: #01a9db; /* Mantenido el fondo azul vibrante para la zona de contenido */
+
+    font-family: 'Open Sans', sans-serif
+}

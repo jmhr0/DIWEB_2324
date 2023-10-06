@@ -1,0 +1,62 @@
+
+
+body {
+    background-color: antiquewhite
+}
+
+.gridContainer{
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 50px auto;
+
+    gap: 10px;
+    background-color: black;
+}
+
+#zonaLogo{
+    grid-column: 2/4;
+    grid-row: 1;
+    background-color: blanchedalmond;
+}
+
+#zonaTitulo{
+    grid-column: 5/10;
+    grid-row: 1;
+
+    background-color: beige;
+}
+
+#zonaNavegacion  {
+    grid-column: 2/12;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: orange;
+}
+
+#zonaContenido{
+    grid-column: 3/10;
+    grid-row: 3;
+    background-color: blueviolet;
+}
+
+.divFormulario{
+    padding-top: 20px;
+    margin-left:  15%;
+    height: 100%;
+
+    background-color: aqua;
+}
+
+
+.divFormulario div {
+    margin-bottom: 15px;
+}
+
+.divFormulario div input:hover{
+    background-color: goldenrod
+}
