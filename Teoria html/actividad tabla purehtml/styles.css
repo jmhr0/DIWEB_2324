@@ -1,0 +1,38 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 200px;
+    height: 200px;
+}
+
+#table_row--first-row{
+    border-bottom: 2px solid black;
+    height: 20px;
+}
+
+.row__td--right-bottom{
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.row__td--bottom{
+    border-bottom: 1px solid gray;
+}
+
+.row__td--right{
+    border-right: 1px solid gray;
+}
+
+h4 {
+    color: brown
+
+}
+
+caption {
+    font-size: 0.5em;
+}
+
+tr th:nth-child(1) {
+    width: 10px;
+    background-color: red;
+}
