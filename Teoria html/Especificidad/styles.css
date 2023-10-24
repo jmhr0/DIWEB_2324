@@ -1,0 +1,67 @@
+h1,p,h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+div p {
+    font-family: Arial, Helvetica, sans-serif;
+    color:green
+}
+
+div>p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+}
+
+.cuerpo__divDePrueba {
+    color: blueviolet;
+    background-color: chocolate;
+
+    height: 50px;
+
+    width: 100px;
+
+    border: 1px solid black;
+    padding: 10px;
+}
+.cuerpo__divDePrueba--red {
+    color: blueviolet;
+    background-color: red;
+
+    height: 50px;
+
+    width: 100px;
+
+    border: 1px solid black;
+    padding: 10px;
+    
+    position: relative;
+
+    top: 10px;
+    left: 30px;
+
+
+}
+.cuerpo__divDePrueba--blue {
+    color: blueviolet;
+    background-color: blue;
+
+    height: 50px;
+
+    width: 100px;
+
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.cuerpo__spanPrueba {
+    color: blueviolet;
+    background-color: blue;
+
+    height: 50px;
+
+    width: 100px;
+
+    border: 1px solid black;
+    padding: 10px;
+}
