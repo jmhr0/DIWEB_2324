@@ -1,0 +1,36 @@
+.seccion--ppal {
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: f
+    
+}
+
+.seccion-ppal__div1 {
+    height: 50px;
+    width: 50px;
+
+
+    background-color: aliceblue;
+}
+.seccion-ppal__div2 {
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background-color: rgb(82, 119, 151);
+}
+.seccion-ppal__div3 {
+    height: 50px;
+    width: 50px;
+
+
+    top: 20px;
+    left: 20px;
+
+    background-color: rgb(238, 5, 94);
+}
