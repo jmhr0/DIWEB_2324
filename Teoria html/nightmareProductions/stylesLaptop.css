@@ -1,0 +1,21 @@
+
+@media all and (max-width:920px) {
+    .main__zonaImagen {
+
+        grid-column: 2/12;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .main__zonaInfo {
+
+        grid-column: 2/12;
+        border-left: 0;
+        border-bottom: 6px solid #330033;
+        padding: 10px;
+    }
+
+}
