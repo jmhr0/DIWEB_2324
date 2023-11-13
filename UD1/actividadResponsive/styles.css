@@ -1,0 +1,167 @@
+
+* {
+    font-family: "Lato", sans-serif;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+.header {
+  height: 53px;
+  background-color: yellow;
+  color: #fff;
+}
+
+.zonaTitulo {
+    display: flex;
+   }
+
+.zonaNav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+.zonaNav a {
+    text-decoration: none;
+}
+
+.zonaInicio {
+
+    padding: 17px;
+
+  position: relative;
+  bottom: 18px;
+  right: 0px;
+
+  color: #fff;
+
+  font-size: 15px;
+  text-decoration: none;
+
+
+  align-items: center;
+
+  font-family: "Lato", sans-serif;
+
+  border-color: black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+.zonaServicios {
+
+    padding: 17px;
+
+  position: relative;
+  bottom: 18px;
+  right: 0px;
+
+  color: #fff;
+
+  font-size: 15px;
+  text-decoration: none;
+
+
+  align-items: center;
+
+  font-family: "Lato", sans-serif;
+
+  border-color: black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+
+}
+.zonaBlog {
+
+    padding: 17px;
+
+  position: relative;
+  bottom: 18px;
+  right: 0px;
+
+  color: #fff;
+
+  font-size: 15px;
+  text-decoration: none;
+
+
+  align-items: center;
+
+  font-family: "Lato", sans-serif;
+
+  border-color: black;
+  border-bottom: 2px solid black;
+
+}
+
+.main__content{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    height: 100vh;
+}
+
+.zonaImagenArticulo {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+
+    grid-column: 1/8;
+    grid-row: 1/8;
+}
+
+.zonaDetallesArticulo {
+    display: flex;
+    background-color: blue;
+
+}
+
+.zonaNavegacionArticulos {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    grid-column: 8/13;
+    grid-row: 1/12;
+
+}
+
+.tituloNavegacion {
+    display: flex;
+}
+
+.articulosNavegacion{
+    justify-content: center;
+    align-items: center;
+}
+
+.articuloNavegacion1,.articuloNavegacion2,.articuloNavegacion3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+    text-decoration: underline;
+
+    color: black;
+}
+
+.zonaDetallesArticulos {
+    display: flex;
+    background-color: green;
+    grid-column: 1/8;
+    grid-row: 8/11
+}
+
+.footer {
+    display: flex;
+    background-color: grey;
+    grid-column: 1/18;
+    grid-row: 11/12;
+
+    justify-content: center;
+    align-items: center;
+}
