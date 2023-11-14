@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+</body>
+</html>
+<script>
+        const cambiarDiseño = ()=> {
+        const navTexto = document.querySelector('header .navTexto')
+        const navHamburguer = document.querySelector('header .navHamburguer')
+
+        if (!navTexto.getAttribute('display')){
+            navTexto.setAttribute('display.none')
+            navHamburguer.removeAttribute('display')
+        }
+    }
+</script>
