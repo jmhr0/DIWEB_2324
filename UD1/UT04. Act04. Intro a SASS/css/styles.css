@@ -1,0 +1,39 @@
+.header {
+  background-color: black;
+  height: 150px;
+}
+.header img {
+  position: relative;
+  left: 600px;
+}
+
+.header__text {
+  color: white;
+  font-size: 40px;
+  position: relative;
+  left: 600px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid grey;
+  text-decoration: none;
+}
+.menu a {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.menu a:hover {
+  border-bottom: 3px solid #CC0000;
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

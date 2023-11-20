@@ -1,0 +1,51 @@
+$colorRojo:#CC0000;
+$colornegro:#2222;
+$colorBlancoTextos:#FFFFFF;
+$colorBorde:#DDDDDD;
+$colorFondo:#EEEEEE;
+
+
+.header {
+    background-color: black;
+    height: 150px;
+
+    img {
+        position:relative;
+
+        left: 600px;
+    }
+}
+
+.header__text {
+    color: white;
+    font-size: 40px;
+    
+    position: relative;
+
+    left: 600px
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid grey;
+
+    text-decoration: none;
+
+    a {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    a:hover {
+        border-bottom: 3px solid #CC0000;
+    }
+}
+
+body {
+    margin: 0px;
+    background-color: white;
+}
