@@ -1,19 +1,43 @@
-body {
-  background-color: #F0F0F0;
+.header {
+  background-color: #000000;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header h1 {
+  grid-column: 3/11;
 }
 
-.header {
-  height: 10vh;
-  background-color: #1D1D1D;
+.nav-bar {
+  background-color: #F0F0F0;
+  color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-.header .header__div {
-  height: 100%;
-  width: 3em;
-  color: #F0F0F0;
-  padding: 10px;
+.nav-bar div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.nav-bar div a {
+  text-decoration: none;
+  padding: 1em;
+  color: inherit;
+}
+.nav-bar div a:hover {
+  border-bottom: 2px solid #CC0000;
+}
+
+.main-content {
+  background-color: #FFFFFF;
+  color: #000000;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.main-content .main__publicacion {
+  grid-column: 3/11;
 }
 
 /*# sourceMappingURL=styles.css.map */

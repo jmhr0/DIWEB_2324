@@ -4,30 +4,33 @@
 }
 .header img {
   position: relative;
+  width: 200px;
   left: 600px;
 }
 
 .header__text {
   color: white;
-  font-size: 40px;
+  font-size: 70px;
   position: relative;
   left: 600px;
 }
 
-.menu {
+.menu-nav {
   display: flex;
   justify-content: center;
-  border-bottom: 3px solid grey;
+  border-bottom: 3px solid #DDDDDD;
   text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-.menu a {
-  padding-left: 20px;
-  padding-right: 20px;
+.menu-nav a {
+  padding-left: 1em;
+  padding-right: 1em;
   text-decoration: none;
-  color: black;
-  font-size: 18px;
+  color: rgba(34, 34, 34, 0.1333333333);
+  font-size: 15px;
 }
-.menu a:hover {
+.menu-nav a:hover {
   border-bottom: 3px solid #CC0000;
 }
 

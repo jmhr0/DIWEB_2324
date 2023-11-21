@@ -1,23 +1,69 @@
-$color-primary: #F0F0F0;
-$color-secondary: #1D1D1D;
+$colorFondo: #FFFFFF;
+$colorHeaderFondo: #000000;
+$colorFondoNav:#F0F0F0;
 
-body {
-    background-color: $color-primary;
+$colorLetraNormal:#000000;
+$colorLetraHeader:#FFFFFF;
+$colorLetraNav:#222222;
+
+$colorBordeElementoNav:#CC0000;
+
+//Funcion para cambiar el fondo y la letra de index
+@mixin cambiarFondoYLetra($colorNuevoFondo:#FFFFFF, $colorNuevoLetra:#000000) {
+    background-color: $colorNuevoFondo;
+    color: $colorNuevoLetra;
+}
+
+//Funcion para establecer grid
+@mixin establecerGrid($Ncolumnas:12){
+    display: grid;
+    grid-template-columns: repeat($Ncolumnas,1fr);
 }
 
 .header {
-height: 10vh;
+    @include cambiarFondoYLetra($colorHeaderFondo,$colorLetraHeader );
 
-background-color: $color-secondary;
+    @include establecerGrid;
 
-display: flex;
-justify-content: center;
-align-items: center;
-
-.header__div {
-    height: 100%;
-    width: 3em;
-    color: $color-primary;
-    padding: 10px;
+    h1 {
+        grid-column: 3/11;
+    }
 }
+
+.nav-bar {
+    @include cambiarFondoYLetra($colorFondoNav,$colorLetraHeader );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    div {
+        padding-left: 1em;
+        padding-right: 1em;
+        
+
+         a {
+            text-decoration: none;
+            padding: 1em;
+            color: inherit;
+         }
+
+         a:hover {
+            border-bottom: 2px solid $colorBordeElementoNav ;
+         }
+    }
+}
+
+.main-content {
+    @include cambiarFondoYLetra($colorFondo,$colorLetraNormal );
+
+    @include establecerGrid;
+
+    .main__publicacion{
+        grid-column: 3/11;
+    }
+
 }
