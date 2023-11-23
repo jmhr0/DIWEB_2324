@@ -1,0 +1,25 @@
+//Textos
+$textos: #222222;
+$cabecera: #FFFFFF;
+$pieDePagina:#FFFFFF;
+//Enlaces
+$enlaceIntext:#CC0000;
+$enlaceHover:#2222;
+//MenuNav
+$enlaceInMenu:#2222;
+$enlaceHover:#CC0000;
+$enlacePaginaActual:#CC0000;
+//Borde y fondo
+$Borde:#DDDDDD;
+$Fondo:#EEEEEE;
+//Funcion para cambiar el fondo y la letra de index
+@mixin cambiarFondoYLetra($colorNuevoFondo:#FFFFFF, $colorNuevoLetra:#000000) {
+    background-color: $colorNuevoFondo;
+    color: $colorNuevoLetra;
+}
+
+//Funcion para establecer grid
+@mixin establecerGrid($Ncolumnas:12){
+    display: grid;
+    grid-template-columns: repeat($Ncolumnas,1fr);
+}

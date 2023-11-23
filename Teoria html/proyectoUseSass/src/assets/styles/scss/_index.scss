@@ -1,0 +1,45 @@
+h1,h2,h3,h4,div,a {
+    font-family: $tipografia-sans-serif;
+}
+
+
+.header {
+    display: flex;
+    grid-template-columns: repeat(12,1fr);
+    height: 10vh;
+    background-color: $color-fondo-header;
+    color: $color-letra-header;
+
+    .header__titulo {
+        grid-column: 2/9;
+        height: 100%;
+
+    }
+    .header__nav {
+        grid-column: 9/12;
+        height: 100%;
+
+        background-color: aqua;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .nav__hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        .nav__span{
+            width: 30px;
+            height: 4px;
+            border-radius: 2px;
+            background-color: black ;
+            margin: 2px;
+
+        }
+    }
+    }
+}

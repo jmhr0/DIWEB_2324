@@ -1,42 +1,18 @@
-.header {
-  background-color: black;
-  height: 150px;
-}
-.header img {
-  position: relative;
-  width: 200px;
-  left: 600px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 27 |     border-bottom: 3px solid $Borde;
+ *    |                              ^^^^^^
+ *    '
+ *   sass\layouts\_fin-confianza.scss 27:30  @use
+ *   sass\styles.scss 2:1                    root stylesheet */
 
-.header__text {
-  color: white;
-  font-size: 70px;
-  position: relative;
-  left: 600px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 27 \2502      border-bottom: 3px solid $Borde;\d\a    \2502                               ^^^^^^\a    \2575 \a   sass\\layouts\\_fin-confianza.scss 27:30  @use\a   sass\\styles.scss 2:1                    root stylesheet";
 }
-
-.menu-nav {
-  display: flex;
-  justify-content: center;
-  border-bottom: 3px solid #DDDDDD;
-  text-decoration: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.menu-nav a {
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: rgba(34, 34, 34, 0.1333333333);
-  font-size: 15px;
-}
-.menu-nav a:hover {
-  border-bottom: 3px solid #CC0000;
-}
-
-body {
-  margin: 0px;
-  background-color: white;
-}
-
-/*# sourceMappingURL=styles.css.map */

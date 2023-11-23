@@ -1,0 +1,50 @@
+ 
+.header {
+    background-color: black;
+    height: 150px;
+
+    img {
+        position:relative;
+
+        width: 200px;
+
+        left: 600px;
+    }
+}
+
+.header__text {
+    color: white;
+    font-size: 70px;
+    
+    position: relative;
+
+    left: 600px
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid $Borde;
+
+    text-decoration: none;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    a {
+        padding-left: 1em;
+        padding-right: 1em;
+        text-decoration: none;
+        color: $enlaceInMenu;
+        font-size: 15px;
+    }
+
+    a:hover {
+        border-bottom: 3px solid #CC0000;
+    }
+}
+
+body {
+    margin: 0px;
+    background-color: white;
+}
