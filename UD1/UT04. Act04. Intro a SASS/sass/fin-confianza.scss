@@ -1,0 +1,155 @@
+@import "variables";
+
+body {
+    margin: 0px;
+}
+
+.header {
+    @include cambiarFondoYLetra($fondoHeader, $letraHeader);
+    @include establecerGrid();
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .header__zonaTituloLogo {
+        grid-column: 3/11;
+        @include tipografiaTitulos();
+    }
+}
+
+.nav-bar {
+    @include cambiarFondoYLetra($fondoNav, $letraNav);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid $colorBorde;
+    padding: 2em;
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        li {
+            padding: 0 1em;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                padding: 1em;
+
+                &:hover {
+                    border-bottom: 4px solid $BordeElementoNav;
+                }
+            }
+
+			.a__active {
+				border-bottom: 4px solid $BordeElementoNav;
+			}
+        }
+    }
+}
+
+.main-content {
+    @include cambiarFondoYLetra($fondo, $colorLetra);
+    @include establecerGrid();
+
+    section {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: x-large;
+    }
+
+    .main__publicacion {
+        grid-column: 3/11;
+        font-size: large;
+
+        .image-container {
+            text-align: center;
+        }
+
+        img#confi_lab {
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+        }
+    }
+
+    .main__publicacion section,
+    p {
+        @include tipografiaTitulos();
+    }
+
+    .main__publicacion h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include tipografiaTextos();
+    }
+
+    .main__publicacion a {
+        color: #cc0000;
+        text-decoration: none;
+
+        a:hover {
+            color: #222222;
+        }
+    }
+
+    #main__publicacion--título {
+        font-size: 3em;
+    }
+
+    .main__publicacion--subtitulo {
+        text-align: center;
+        margin-top: 5px;
+        @include tipografiaTitulos();
+        font-size: medium;
+        margin-bottom: 2em;
+    }
+
+    .main__publicacion--infoAutor {
+        @include establecerGrid();
+        display: flex;
+        align-items: center;
+        margin-bottom: 5em;
+        margin-left: 15%;
+        margin-right: 15%;
+
+        img {
+            max-width: 100%;
+            margin-right: 1em;
+            border-radius: 100%;
+        }
+    }
+}
+
+.autorFecha {
+    @include tipografiaTextos();
+}
+
+footer {
+    @include establecerGrid();
+    background-color: $fondoFooter;
+
+    img {
+        grid-column: 3/11;
+    }
+
+    p {
+        grid-column: 3/11;
+        color: $letraFooter;
+    }
+}

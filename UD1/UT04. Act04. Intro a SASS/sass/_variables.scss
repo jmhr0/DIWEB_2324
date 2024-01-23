@@ -1,25 +1,51 @@
-//Textos
 $textos: #222222;
-$cabecera: #FFFFFF;
-$pieDePagina:#FFFFFF;
-//Enlaces
-$enlaceIntext:#CC0000;
-$enlaceHover:#2222;
-//MenuNav
-$enlaceInMenu:#2222;
-$enlaceHover:#CC0000;
-$enlacePaginaActual:#CC0000;
-//Borde y fondo
-$Borde:#DDDDDD;
-$Fondo:#EEEEEE;
+
+$fondo: #eeeeee;
+
+$fondoHeader: #000000;
+$letraHeader: #ffffff;
+
+$fondoFooter: #3b3b3b;
+$letraFooter: #ffffff;
+
+$colorLetra: #000000;
+
+$fondoNav: #f0f0f0;
+$letraNav: #222222;
+
+$colorBorde: #dddddd;
+
+$BordeElementoNav: #cc0000;
+
 //Funcion para cambiar el fondo y la letra de index
-@mixin cambiarFondoYLetra($colorNuevoFondo:#FFFFFF, $colorNuevoLetra:#000000) {
-    background-color: $colorNuevoFondo;
-    color: $colorNuevoLetra;
+@mixin cambiarFondoYLetra($colorNuevoFondo: #ffffff, $colorNuevoLetra: #000000) {
+	background-color: $colorNuevoFondo;
+	color: $colorNuevoLetra;
 }
 
 //Funcion para establecer grid
-@mixin establecerGrid($Ncolumnas:12){
-    display: grid;
-    grid-template-columns: repeat($Ncolumnas,1fr);
+@mixin establecerGrid($Ncolumnas: 12) {
+	display: grid;
+	grid-template-columns: repeat($Ncolumnas, 1fr);
+}
+
+@mixin tipografiaTitulos {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@mixin tipografiaTextos {
+	font-family: "Times New Roman", Times, serif;
+}
+
+@mixin estiloEnlace {
+	color: #CC0000;
+	text-decoration: none;
+	a:hover {
+		color: #222222;
+	}
+}
+
+@mixin centrar {
+	margin-left: auto;
+	margin-right: auto;
 }

@@ -1,29 +1,29 @@
-h1,h2,h3,h4,div,a {
+h1, h2, h3, h4, div, a {
     font-family: $tipografia-sans-serif;
 }
 
-
 .header {
-    display: flex;
-    grid-template-columns: repeat(12,1fr);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
     height: 10vh;
-    background-color: $color-fondo-header;
+    background-color: $color-header-fondo;
     color: $color-letra-header;
 
     .header__titulo {
         grid-column: 2/9;
         height: 100%;
-
     }
-    .header__nav {
+
+    .header__nav{
         grid-column: 9/12;
         height: 100%;
 
-        background-color: aqua;
+        background-color: red;
 
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
 
         .nav__hamburger {
             display: flex;
@@ -32,20 +32,26 @@ h1,h2,h3,h4,div,a {
             align-items: center;
             cursor: pointer;
 
-        .nav__span{
-            width: 30px;
-            height: 4px;
-            border-radius: 2px;
-            background-color: black ;
-            margin: 2px;
-
+            .nav__span {
+                width: 30px;
+                height: 4px;
+                border-radius: 2px;
+                margin: 2px;
+                
+                background-color: black;
+                transition: all 0.2s ease-in;
+            }
         }
-    }
-    .nav__hamburger:hover {
 
-        .nav__span:nth-child(2) {
-            transform: scale(0.8);
+        .nav__hamburger:hover {
+
+            .nav__span:nth-child(2) {
+                width: 60%;
+                background-color: rebeccapurple;
+            }
         }
+
     }
-    }
+
+
 }
