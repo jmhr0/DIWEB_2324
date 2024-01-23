@@ -1,10 +1,10 @@
-
+/*
 .contacto__main {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .main__contact-form{
+    .main__contact-form {
         border: 1px solid black;
         border-radius: 30px;
         padding: 2em;
@@ -18,7 +18,7 @@
                 left: 10px;
                 top: 5px;
                 font-size: small;
-                transition: all .2s ease-in;
+                transition: all 0.2s ease-in;
             }
 
             .box__input-field {
@@ -39,23 +39,22 @@
             }
 
             .box__input-field:focus ~ .box__label,
-            .box__input-field:user-valid ~ .box__label{
+            .box__input-field:user-valid ~ .box__label {
                 font-size: xx-small;
                 padding-left: 2px;
                 padding-right: 2px;
                 top: -10px;
             }
             .box__input-field--text-area:focus ~ .box__label,
-            .box__input-field--text-area:user-valid ~ .box__label{
+            .box__input-field--text-area:user-valid ~ .box__label {
                 font-size: xx-small;
                 padding-left: 2px;
                 padding-right: 2px;
                 top: -10px;
             }
         }
-        
-        .contact-form__box--buttons {
 
+        .contact-form__box--buttons {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -82,7 +81,38 @@
             .buttons__send:active {
                 background-color: rgb(126, 185, 126);
             }
-            
+        }
+    }
+}
+*/
+.contacto__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main__formularioContacto {
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 1em;
+
+        border: 2px solid $ubriWeb-corporate;
+        border-radius: 1em;
+
+        padding: 2em;
+
+        background-color: $ubriWeb-bg;
+        .formularioContacto__groupPasswd{
+            display: flex;
+            flex-direction: column;
+        }
+        .formularioContacto__groupNombre{
+            display: flex;
+            flex-direction: column;
+        }
+        .formularioContacto__groupBotones{
+            display: flex;
+            flex-direction: column;
         }
     }
 }
