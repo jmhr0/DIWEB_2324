@@ -86,33 +86,57 @@
 }
 */
 .contacto__main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20%,80%;
     align-items: center;
     justify-content: center;
+    label{
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+    .input__text{
+        width: 50%;
+        height: 2em;
+
+        &:hover{
+            border: 3px solid $color__black;
+        }
+        &:focus{
+            border: 3px solid $color__black;
+            outline: none;
+    }
+    }
+
+    .button_normal{
+        align-items:flex-start;
+
+        width: 8em;
+        height: 3em;
+        outline: none;
+        border: none;
+        background-color: greenyellow;
+        font-weight: bold;
+    }
+    
+
+    
 
     .main__formularioContacto {
-        display: flex;
-        flex-direction: column;
-
-        row-gap: 1em;
-
-        border: 2px solid $ubriWeb-corporate;
-        border-radius: 1em;
-
-        padding: 2em;
-
+        grid-column-start: 2;
+        grid-column-end: 3;
         background-color: $ubriWeb-bg;
-        .formularioContacto__groupPasswd{
+        padding: 1em;
+        border-left: 1px solid black;
+        .formularioContacto__group{
             display: flex;
             flex-direction: column;
+            padding-bottom: 1em;
         }
-        .formularioContacto__groupNombre{
-            display: flex;
-            flex-direction: column;
-        }
-        .formularioContacto__groupBotones{
-            display: flex;
-            flex-direction: column;
+        .formularioContacto__group--botonera{
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 1em;
         }
     }
 }

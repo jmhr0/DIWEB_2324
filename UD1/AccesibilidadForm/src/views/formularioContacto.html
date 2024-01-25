@@ -1,18 +1,56 @@
 <form class="main__formularioContacto" action="">
-
-    <div role="region" class="formularioContacto__groupNombre">
-    <label for="nombre" id="label_nombre" aria-label="input_nombre">Nombre</label>
-    <input type="text" name="input_nombre" id="input_nombre" aria-labelledby="label_nombre" aria-required="false">
+    <div role="region">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            esse ullam? Minima reiciendis neque quas consequuntur! Quisquam
+            maiores illum, nesciunt sunt consectetur quis dolores excepturi,
+            modi similique ea at consequatur!
+        </p>
     </div>
-    <div role="region" class="formularioContacto__groupPasswd">
-    <label for="input_password" id="label_password" aria-label="input_password">Password</label>
-    <input type="password" id="input_password" name="input_password" aria-labelledby="label_password" required aria-required="true">
 
+    <div role="region" class="formularioContacto__group">
+        <label for="nombre" id="label_nombre" aria-label="input_nombre"
+            >Nombre: <span class="color_red">*</span></label
+        >
+        <input
+            type="text"
+            class="input__text"
+            name="input_nombre"
+            placeholder="Escriba su nombre"
+            id="input_nombre"
+            required
+            aria-labelledby="label_nombre"
+            aria-required="true"
+        />
+    </div>
+    <div role="region" class="formularioContacto__group">
+        <label for="apellido" id="label_apellido" aria-label="input_apellido"
+            >Apellidos:</label
+        >
+        <input
+            type="text"
+            class="input__text"
+            placeholder="Escriba sus apellidos"
+            name="input_apellido"
+            id="input_apellido"
+            required
+            aria-labelledby="apellido"
+            aria-required="true"
+        />
+    </div>
 
+    <div class="formularioContacto__group--botonera">
+        <button class="button_normal" role="button" type="submit">
+            Enviar
+        </button>
+        <br />
 
-    <button type="submit" class="formularioContacto__groupBotones">Enviar</button>
+        <div role="region" class="formularioContacto__group">
+            <input type="checkbox">
+        </div>
 
-
-
-
+        <div role="region" class="formularioContacto__group">
+            <label>Campos obligatorios (*)</label>
+        </div>
+    </div>
 </form>
