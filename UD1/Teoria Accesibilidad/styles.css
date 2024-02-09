@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.25em;
+    text-align: center;
+}
+
+header img {
+    width: 9.375em;
+    height: 9.375em;
+}
+
+h1 {
+    margin-top: 0.625em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.25em;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.625em;
+}
+
+th, td {
+    border: 0.0625em solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+/* técnica de zebra stripping para mejorar la visibilidad en las tablas para personas con diversidades funcionales, utilizable en cualquier otro ámbito también */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+} 
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.principio {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.25em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
