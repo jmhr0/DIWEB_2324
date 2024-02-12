@@ -163,6 +163,7 @@ textarea {
     height: 20em;
     width: 50em;
     resize: none;
+    color: #ffffff;
 }
 
 .input-group {
@@ -244,6 +245,13 @@ label {
 .copyright {
     font-size: 0.8em;
     margin-top: 10px;
+    color: #ffffff;
+}
+
+.copyright a {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #ffffff;
 }
 
 footer {
