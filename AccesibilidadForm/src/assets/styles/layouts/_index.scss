@@ -1,0 +1,18 @@
+body{
+}
+
+.index__main{
+display: flex;
+align-items: center;
+align-content: center;
+    .main_picture{
+        img{
+            width: 100vw;
+            height: auto;
+            position: relative;
+            max-height: 80vh;
+        }
+
+    }
+
+}
