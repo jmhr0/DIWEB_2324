@@ -16,12 +16,15 @@ $ubriWeb-corporate-4-scaled: color.scale($ubriWeb-corporate-4, $lightness: 20%);
 
 $ubriWeb-corporate-5: #EFEBD6;
 
+$ubriWeb-corporate-hover: rgba(127, 255, 212, 0.507);
+
 $ubriWeb-masterbrand: #ececec;
 $ubriWeb-bg: color.scale($ubriWeb-masterbrand, $lightness: 70%);
 
 $color-red: #b90000;
 $color-green: #238d00;
 $color-black: #1f1f1f;
+$color-white: #f9f9f9;
 
 $mqMinWidth: 420px;
 

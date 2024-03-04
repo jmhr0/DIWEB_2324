@@ -2,6 +2,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/git,sass,node,macos,linux,windows,vscode,sublimetext
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,sass,node,macos,linux,windows,vscode,sublimetext
 
+
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
@@ -251,3 +252,4 @@ $RECYCLE.BIN/
 
 ### UOC Boilerplate ###
 dist
+src/assets/videos/*

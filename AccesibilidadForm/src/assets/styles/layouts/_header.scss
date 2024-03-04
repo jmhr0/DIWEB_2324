@@ -1,8 +1,8 @@
 .header {
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-
-  min-height: 10vh;
+  
 
   .header__zonaTitulo {
     grid-column: 2/5;
@@ -29,13 +29,13 @@
     a {
       padding: 1.5em;
       text-decoration: none;
-      color: black;
+      color: inherit;
       transition: all .2s ease-in;
       
     }
 
     a:hover {
-      background-color: rgba(127, 255, 212, 0.507);
+      background-color: $ubriWeb-corporate-hover;
     }
   }
 }

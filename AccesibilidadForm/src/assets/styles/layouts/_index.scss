@@ -1,18 +1,82 @@
-body{
-}
+.index__main {
+    
 
-.index__main{
-display: flex;
-align-items: center;
-align-content: center;
-    .main_picture{
-        img{
-            width: 100vw;
-            height: auto;
-            position: relative;
-            max-height: 80vh;
+    .main__picture {
+
+        overflow: hidden;
+        max-height: 90vh;
+
+        .img {
+            width: 100%;
+            height: auto;   
         }
 
+        .video {
+            width: minmax(60%, 100%);
+        }
+    }
+}
+
+.main__tabs {
+
+    padding: 1em;
+    background-color: burlywood;
+
+    .tabs__listaBotones {
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        .listaBotones__botonTab {
+            padding: 1em;
+            margin: 0 1em 0 0;
+            transition: all 0.2s ease;
+            cursor: pointer;
+
+            @include neo(1, 1em, 1em)
+        }
+
+        .listaBotones__botonTab:hover {
+            background-color: $ubriWeb-corporate-hover;
+        }
+
+        .activo {
+            background-color: $ubriWeb-corporate;
+            
+        }
     }
 
+    .tabs__contenedorTexto {
+
+        position: relative;
+        overflow: hidden;
+        min-height: 40vh;
+
+        .contenedorTexto__bloque {
+            background-color: aquamarine;
+
+            padding: 1em;
+            position: absolute;
+            top: 0;
+            opacity: 0;
+
+            @include neo(1, 1em, 1em);
+
+            h1{
+                font-weight: bold;
+                font-size: larger;
+            }
+            p{
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .activo {
+            opacity: 1;
+            width: 70em;
+        }
+    }
 }
