@@ -254,6 +254,24 @@ header {
   justify-items: center;
 }
 
+.merriweather-test{
+  font-family: 'Merriweather', serif;
+
+  font-size:xx-large
+}
+
+.anton-test{
+  font-family: 'Anton', sans-serif;
+
+  font-size:xx-large
+}
+
+.opendis-test{
+  font-family: 'OpenDyslexic', sans-serif;
+
+  font-size:xx-large
+}
+
 .login-container {
   display: flex;
   align-items: center;
